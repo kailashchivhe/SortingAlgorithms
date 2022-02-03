@@ -68,6 +68,10 @@ public class HeapSortHelper {
     public void initiateHeapSort(Integer[] inputSize1_heap, Integer[] inputSize2_heap, Integer[] inputSize3_heap,
                                    Integer[] inputSize4_heap, Integer[] inputSize5_heap, Integer[] inputSize6_heap, Integer[] inputSize7_heap,
                                    Integer[] inputSize8_heap, Integer[] inputSize9_heap, Integer[] inputSize10_heap, Integer[] inputSize11_heap ) {
+        System.out.println();
+        System.out.println(
+                "--------------------------------------------------------------------------------------------------------------------");
+        System.out.println();
         System.out.print("Heap sort non-sorted array: ");
         long start = System.currentTimeMillis();
         MinimumHeapTree minHeapTree1 = new MinimumHeapTree(inputSize1_heap.length);
