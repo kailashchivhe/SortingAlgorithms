@@ -53,11 +53,11 @@ Modified Quick sort reverse sorted array: 3ms  4ms  3ms  4ms  5ms  14ms  31ms  3
 
 --------------------------------------------------------------------------------------------------------------------
 
-Heap sort non-sorted array: 11ms  3ms  7ms  10ms  9ms  26ms  38ms  33ms  54ms  63ms  
+Heap sort non-sorted array: 16ms  5ms  7ms  15ms  20ms  39ms  75ms  97ms  108ms  145ms  138ms
 --------------------------------------------------------------------------------------------------------------------
 
-Heap sort sorted array: 1ms  1ms  5ms  2ms  6ms  11ms  25ms  38ms  36ms  54ms  
+Heap sort sorted array: 2ms  2ms  9ms  6ms  12ms  30ms  57ms  84ms  93ms  129ms  136ms
 --------------------------------------------------------------------------------------------------------------------
 
-Heap sort reverse sorted array: 3ms  1ms  3ms  5ms  13ms  19ms  42ms  77ms  79ms  89ms  
+Heap sort reverse sorted array: 2ms  3ms  7ms  9ms  31ms  46ms  99ms  121ms  143ms  202ms  223ms
 --------------------------------------------------------------------------------------------------------------------

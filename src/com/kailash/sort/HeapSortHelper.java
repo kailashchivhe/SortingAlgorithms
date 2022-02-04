@@ -74,93 +74,102 @@ public class HeapSortHelper {
         System.out.println();
         System.out.print("Heap sort non-sorted array: ");
         long start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree1 = new MinimumHeapTree(inputSize1_heap.length);
+        MinimumHeapTree minHeapTree = new MinimumHeapTree(inputSize1_heap.length);
         for (int i = 0; i < inputSize1_heap.length; i++) {
-            insertKey(minHeapTree1, inputSize1_heap[i]);
+            insertKey(minHeapTree, inputSize1_heap[i]);
         }
         for (int i = 0; i < inputSize1_heap.length; i++) {
-            inputSize1_heap[i] = extractMin(minHeapTree1);
+            inputSize1_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree2 = new MinimumHeapTree(inputSize2_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize2_heap.length);
         for (int i = 0; i < inputSize2_heap.length; i++) {
-            insertKey(minHeapTree2, inputSize2_heap[i]);
+            insertKey(minHeapTree, inputSize2_heap[i]);
         }
         for (int i = 0; i < inputSize2_heap.length; i++) {
-            inputSize2_heap[i] = extractMin(minHeapTree2);
+            inputSize2_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree3 = new MinimumHeapTree(inputSize3_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize3_heap.length);
         for (int i = 0; i < inputSize3_heap.length; i++) {
-            insertKey(minHeapTree3, inputSize3_heap[i]);
+            insertKey(minHeapTree, inputSize3_heap[i]);
         }
         for (int i = 0; i < inputSize3_heap.length; i++) {
-            inputSize3_heap[i] = extractMin(minHeapTree3);
+            inputSize3_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree4 = new MinimumHeapTree(inputSize4_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize4_heap.length);
         for (int i = 0; i < inputSize4_heap.length; i++) {
-            insertKey(minHeapTree4, inputSize4_heap[i]);
+            insertKey(minHeapTree, inputSize4_heap[i]);
         }
         for (int i = 0; i < inputSize4_heap.length; i++) {
-            inputSize4_heap[i] = extractMin(minHeapTree4);
+            inputSize4_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree5 = new MinimumHeapTree(inputSize5_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize5_heap.length);
         for (int i = 0; i < inputSize5_heap.length; i++) {
-            insertKey(minHeapTree5, inputSize5_heap[i]);
+            insertKey(minHeapTree, inputSize5_heap[i]);
         }
         for (int i = 0; i < inputSize5_heap.length; i++) {
-            inputSize5_heap[i] = extractMin(minHeapTree5);
+            inputSize5_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree6 = new MinimumHeapTree(inputSize6_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize6_heap.length);
         for (int i = 0; i < inputSize6_heap.length; i++) {
-            insertKey(minHeapTree6, inputSize6_heap[i]);
+            insertKey(minHeapTree, inputSize6_heap[i]);
         }
         for (int i = 0; i < inputSize6_heap.length; i++) {
-            inputSize6_heap[i] = extractMin(minHeapTree6);
+            inputSize6_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree7 = new MinimumHeapTree(inputSize7_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize7_heap.length);
         for (int i = 0; i < inputSize7_heap.length; i++) {
-            insertKey(minHeapTree7, inputSize7_heap[i]);
+            insertKey(minHeapTree, inputSize7_heap[i]);
         }
         for (int i = 0; i < inputSize7_heap.length; i++) {
-            inputSize7_heap[i] = extractMin(minHeapTree7);
+            inputSize7_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree8 = new MinimumHeapTree(inputSize8_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize8_heap.length);
         for (int i = 0; i < inputSize8_heap.length; i++) {
-            insertKey(minHeapTree8, inputSize8_heap[i]);
+            insertKey(minHeapTree, inputSize8_heap[i]);
         }
         for (int i = 0; i < inputSize8_heap.length; i++) {
-            inputSize8_heap[i] = extractMin(minHeapTree8);
+            inputSize8_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree9 = new MinimumHeapTree(inputSize9_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize9_heap.length);
         for (int i = 0; i < inputSize9_heap.length; i++) {
-            insertKey(minHeapTree9, inputSize9_heap[i]);
+            insertKey(minHeapTree, inputSize9_heap[i]);
         }
         for (int i = 0; i < inputSize9_heap.length; i++) {
-            inputSize9_heap[i] = extractMin(minHeapTree9);
+            inputSize9_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree10 = new MinimumHeapTree(inputSize10_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize10_heap.length);
         for (int i = 0; i < inputSize10_heap.length; i++) {
-            insertKey(minHeapTree10, inputSize10_heap[i]);
+            insertKey(minHeapTree, inputSize10_heap[i]);
         }
         for (int i = 0; i < inputSize10_heap.length; i++) {
-            inputSize10_heap[i] = extractMin(minHeapTree10);
+            inputSize10_heap[i] = extractMin(minHeapTree);
+        }
+        System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
+        start = System.currentTimeMillis();
+        minHeapTree = new MinimumHeapTree(inputSize10_heap.length);
+        for (int i = 0; i < inputSize10_heap.length; i++) {
+            insertKey(minHeapTree, inputSize11_heap[i]);
+        }
+        for (int i = 0; i < inputSize11_heap.length; i++) {
+            inputSize11_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         System.out.println();
@@ -169,93 +178,102 @@ public class HeapSortHelper {
         System.out.println();
         System.out.print("Heap sort sorted array: ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree11 = new MinimumHeapTree(inputSize1_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize1_heap.length);
         for (int i = 0; i < inputSize1_heap.length; i++) {
-            insertKey(minHeapTree11, inputSize1_heap[i]);
+            insertKey(minHeapTree, inputSize1_heap[i]);
         }
         for (int i = 0; i < inputSize1_heap.length; i++) {
-            inputSize1_heap[i] = extractMin(minHeapTree11);
+            inputSize1_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree12 = new MinimumHeapTree(inputSize2_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize2_heap.length);
         for (int i = 0; i < inputSize2_heap.length; i++) {
-            insertKey(minHeapTree12, inputSize2_heap[i]);
+            insertKey(minHeapTree, inputSize2_heap[i]);
         }
         for (int i = 0; i < inputSize2_heap.length; i++) {
-            inputSize2_heap[i] = extractMin(minHeapTree12);
+            inputSize2_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree13 = new MinimumHeapTree(inputSize3_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize3_heap.length);
         for (int i = 0; i < inputSize3_heap.length; i++) {
-            insertKey(minHeapTree13, inputSize3_heap[i]);
+            insertKey(minHeapTree, inputSize3_heap[i]);
         }
         for (int i = 0; i < inputSize3_heap.length; i++) {
-            inputSize3_heap[i] = extractMin(minHeapTree13);
+            inputSize3_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree14 = new MinimumHeapTree(inputSize4_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize4_heap.length);
         for (int i = 0; i < inputSize4_heap.length; i++) {
-            insertKey(minHeapTree14, inputSize4_heap[i]);
+            insertKey(minHeapTree, inputSize4_heap[i]);
         }
         for (int i = 0; i < inputSize4_heap.length; i++) {
-            inputSize4_heap[i] = extractMin(minHeapTree14);
+            inputSize4_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree15 = new MinimumHeapTree(inputSize5_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize5_heap.length);
         for (int i = 0; i < inputSize5_heap.length; i++) {
-            insertKey(minHeapTree15, inputSize5_heap[i]);
+            insertKey(minHeapTree, inputSize5_heap[i]);
         }
         for (int i = 0; i < inputSize5_heap.length; i++) {
-            inputSize5_heap[i] = extractMin(minHeapTree15);
+            inputSize5_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree16 = new MinimumHeapTree(inputSize6_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize6_heap.length);
         for (int i = 0; i < inputSize6_heap.length; i++) {
-            insertKey(minHeapTree16, inputSize6_heap[i]);
+            insertKey(minHeapTree, inputSize6_heap[i]);
         }
         for (int i = 0; i < inputSize6_heap.length; i++) {
-            inputSize6_heap[i] = extractMin(minHeapTree16);
+            inputSize6_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree17 = new MinimumHeapTree(inputSize7_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize7_heap.length);
         for (int i = 0; i < inputSize7_heap.length; i++) {
-            insertKey(minHeapTree17, inputSize7_heap[i]);
+            insertKey(minHeapTree, inputSize7_heap[i]);
         }
         for (int i = 0; i < inputSize7_heap.length; i++) {
-            inputSize7_heap[i] = extractMin(minHeapTree17);
+            inputSize7_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree18 = new MinimumHeapTree(inputSize8_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize8_heap.length);
         for (int i = 0; i < inputSize8_heap.length; i++) {
-            insertKey(minHeapTree18, inputSize8_heap[i]);
+            insertKey(minHeapTree, inputSize8_heap[i]);
         }
         for (int i = 0; i < inputSize8_heap.length; i++) {
-            inputSize8_heap[i] = extractMin(minHeapTree18);
+            inputSize8_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree19 = new MinimumHeapTree(inputSize9_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize9_heap.length);
         for (int i = 0; i < inputSize9_heap.length; i++) {
-            insertKey(minHeapTree19, inputSize9_heap[i]);
+            insertKey(minHeapTree, inputSize9_heap[i]);
         }
         for (int i = 0; i < inputSize9_heap.length; i++) {
-            inputSize9_heap[i] = extractMin(minHeapTree19);
+            inputSize9_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree20 = new MinimumHeapTree(inputSize10_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize10_heap.length);
         for (int i = 0; i < inputSize10_heap.length; i++) {
-            insertKey(minHeapTree20, inputSize10_heap[i]);
+            insertKey(minHeapTree, inputSize10_heap[i]);
         }
         for (int i = 0; i < inputSize10_heap.length; i++) {
-            inputSize10_heap[i] = extractMin(minHeapTree20);
+            inputSize10_heap[i] = extractMin(minHeapTree);
+        }
+        System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
+        start = System.currentTimeMillis();
+        minHeapTree = new MinimumHeapTree(inputSize11_heap.length);
+        for (int i = 0; i < inputSize11_heap.length; i++) {
+            insertKey(minHeapTree, inputSize11_heap[i]);
+        }
+        for (int i = 0; i < inputSize11_heap.length; i++) {
+            inputSize11_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         System.out.println();
@@ -265,102 +283,112 @@ public class HeapSortHelper {
         System.out.print("Heap sort reverse sorted array: ");
         Arrays.sort(inputSize1_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree21 = new MinimumHeapTree(inputSize1_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize1_heap.length);
         for (int i = 0; i < inputSize1_heap.length; i++) {
-            insertKey(minHeapTree21, inputSize1_heap[i]);
+            insertKey(minHeapTree, inputSize1_heap[i]);
         }
         for (int i = 0; i < inputSize1_heap.length; i++) {
-            inputSize1_heap[i] = extractMin(minHeapTree21);
+            inputSize1_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize2_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree22 = new MinimumHeapTree(inputSize2_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize2_heap.length);
         for (int i = 0; i < inputSize2_heap.length; i++) {
-            insertKey(minHeapTree22, inputSize2_heap[i]);
+            insertKey(minHeapTree, inputSize2_heap[i]);
         }
         for (int i = 0; i < inputSize2_heap.length; i++) {
-            inputSize2_heap[i] = extractMin(minHeapTree22);
+            inputSize2_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize3_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree23 = new MinimumHeapTree(inputSize3_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize3_heap.length);
         for (int i = 0; i < inputSize3_heap.length; i++) {
-            insertKey(minHeapTree23, inputSize3_heap[i]);
+            insertKey(minHeapTree, inputSize3_heap[i]);
         }
         for (int i = 0; i < inputSize3_heap.length; i++) {
-            inputSize3_heap[i] = extractMin(minHeapTree23);
+            inputSize3_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize4_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree24 = new MinimumHeapTree(inputSize4_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize4_heap.length);
         for (int i = 0; i < inputSize4_heap.length; i++) {
-            insertKey(minHeapTree24, inputSize4_heap[i]);
+            insertKey(minHeapTree, inputSize4_heap[i]);
         }
         for (int i = 0; i < inputSize4_heap.length; i++) {
-            inputSize4_heap[i] = extractMin(minHeapTree24);
+            inputSize4_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize5_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree25 = new MinimumHeapTree(inputSize5_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize5_heap.length);
         for (int i = 0; i < inputSize5_heap.length; i++) {
-            insertKey(minHeapTree25, inputSize5_heap[i]);
+            insertKey(minHeapTree, inputSize5_heap[i]);
         }
         for (int i = 0; i < inputSize5_heap.length; i++) {
-            inputSize5_heap[i] = extractMin(minHeapTree25);
+            inputSize5_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize6_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree26 = new MinimumHeapTree(inputSize6_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize6_heap.length);
         for (int i = 0; i < inputSize6_heap.length; i++) {
-            insertKey(minHeapTree26, inputSize6_heap[i]);
+            insertKey(minHeapTree, inputSize6_heap[i]);
         }
         for (int i = 0; i < inputSize6_heap.length; i++) {
-            inputSize6_heap[i] = extractMin(minHeapTree26);
+            inputSize6_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize7_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree27 = new MinimumHeapTree(inputSize7_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize7_heap.length);
         for (int i = 0; i < inputSize7_heap.length; i++) {
-            insertKey(minHeapTree27, inputSize7_heap[i]);
+            insertKey(minHeapTree, inputSize7_heap[i]);
         }
         for (int i = 0; i < inputSize7_heap.length; i++) {
-            inputSize7_heap[i] = extractMin(minHeapTree27);
+            inputSize7_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize8_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree28 = new MinimumHeapTree(inputSize8_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize8_heap.length);
         for (int i = 0; i < inputSize8_heap.length; i++) {
-            insertKey(minHeapTree28, inputSize8_heap[i]);
+            insertKey(minHeapTree, inputSize8_heap[i]);
         }
         for (int i = 0; i < inputSize8_heap.length; i++) {
-            inputSize8_heap[i] = extractMin(minHeapTree28);
+            inputSize8_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize9_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree29 = new MinimumHeapTree(inputSize9_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize9_heap.length);
         for (int i = 0; i < inputSize9_heap.length; i++) {
-            insertKey(minHeapTree29, inputSize9_heap[i]);
+            insertKey(minHeapTree, inputSize9_heap[i]);
         }
         for (int i = 0; i < inputSize9_heap.length; i++) {
-            inputSize9_heap[i] = extractMin(minHeapTree29);
+            inputSize9_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         Arrays.sort(inputSize10_heap, Collections.reverseOrder());
         start = System.currentTimeMillis();
-        MinimumHeapTree minHeapTree30 = new MinimumHeapTree(inputSize10_heap.length);
+        minHeapTree = new MinimumHeapTree(inputSize10_heap.length);
         for (int i = 0; i < inputSize10_heap.length; i++) {
-            insertKey(minHeapTree30, inputSize10_heap[i]);
+            insertKey(minHeapTree, inputSize10_heap[i]);
         }
         for (int i = 0; i < inputSize10_heap.length; i++) {
-            inputSize10_heap[i] = extractMin(minHeapTree30);
+            inputSize10_heap[i] = extractMin(minHeapTree);
+        }
+        System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
+        Arrays.sort(inputSize11_heap, Collections.reverseOrder());
+        start = System.currentTimeMillis();
+        minHeapTree = new MinimumHeapTree(inputSize11_heap.length);
+        for (int i = 0; i < inputSize11_heap.length; i++) {
+            insertKey(minHeapTree, inputSize11_heap[i]);
+        }
+        for (int i = 0; i < inputSize11_heap.length; i++) {
+            inputSize11_heap[i] = extractMin(minHeapTree);
         }
         System.out.print(System.currentTimeMillis() - start + "ms" + " " + " ");
         System.out.println();
