@@ -47,44 +47,44 @@ public class AdvancedQuickSortHelper {
         return Integer.MAX_VALUE;
     }
 
-    private int median(Integer[] array, int i, int n) {
+    private int median(Integer[] data, int i, int n) {
         int s = i;
         int e = i + n;
         while (i < e) {
-            int element = array[i];
+            int element = data[i];
             int j = i - 1;
             boolean largeElementFound = false;
-            while (j >= s && array[j] > element) {
+            while (j >= s && data[j] > element) {
                 if (!largeElementFound) {
                     largeElementFound = true;
                 }
-                array[j + 1] = array[j];
+                data[j + 1] = data[j];
                 j--;
             }
             if (largeElementFound) {
-                array[j + 1] = element;
+                data[j + 1] = element;
             }
             i++;
         }
-        return array[s + (n / 2)];
+        return data[s + (n / 2)];
     }
 
-    private int partition(Integer[] array, int left, int right, int pivot) {
+    private int partition(Integer[] data, int left, int right, int pivot) {
         int i;
         for (i = left; i < right; i++) {
-            if (array[i] == pivot) {
+            if (data[i] == pivot) {
                 break;
             }
         }
-        swap(array, i, right);
+        swap(data, i, right);
         i = left;
         for (int j = left; j < right; j++) {
-            if (array[j] <= pivot) {
-                swap(array, i, j);
+            if (data[j] <= pivot) {
+                swap(data, i, j);
                 i++;
             }
         }
-        swap(array, i, right);
+        swap(data, i, right);
         return i;
     }
 
@@ -180,7 +180,7 @@ public class AdvancedQuickSortHelper {
         System.out.println(
                 "--------------------------------------------------------------------------------------------------------------------");
         System.out.println();
-        // Array revese sorted
+        // Array reverse sorted
         System.out.print("Modified Quick sort reverse sorted array: ");
         Arrays.sort(inputSize1, Collections.reverseOrder());
         start = System.currentTimeMillis();

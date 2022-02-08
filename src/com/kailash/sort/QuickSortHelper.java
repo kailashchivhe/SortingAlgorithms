@@ -41,10 +41,10 @@ public class QuickSortHelper {
         return i + 1;
     }
 
-    private void swap(Integer[] array, int i, int j) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+    private void swap(Integer[] data, int i, int j) {
+        int temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
     }
 
     public void initiateQuickSort( Integer[] inputSize1, Integer[] inputSize2, Integer[] inputSize3,
@@ -133,7 +133,7 @@ public class QuickSortHelper {
         System.out.println(
                 "--------------------------------------------------------------------------------------------------------------------");
         System.out.println();
-        // Array revese sorted
+        // Array reverse sorted
         System.out.print("Quick sort reverse sorted array: ");
         Arrays.sort(inputSize1, Collections.reverseOrder());
         start = System.currentTimeMillis();

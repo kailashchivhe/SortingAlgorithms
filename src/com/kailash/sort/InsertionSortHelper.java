@@ -111,7 +111,7 @@ public class InsertionSortHelper {
         System.out.println(
                 "--------------------------------------------------------------------------------------------------------------------");
         System.out.println();
-        // Array revese sorted
+        // Array reverse sorted
         System.out.print("Insertion sort reverse sorted array: ");
         Arrays.sort(inputSize1, Collections.reverseOrder());
         start = System.currentTimeMillis();
