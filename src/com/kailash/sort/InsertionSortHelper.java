@@ -25,6 +25,10 @@ public class InsertionSortHelper {
         }
     }
 
+    public void performInsertionSort( Integer[] data ){
+        insertionSort( data );
+    }
+
     public void initiateInsertionSort( Integer[] inputSize1, Integer[] inputSize2, Integer[] inputSize3,
                                        Integer[] inputSize4, Integer[] inputSize5, Integer[] inputSize6, Integer[] inputSize7,
                                        Integer[] inputSize8, Integer[] inputSize9, Integer[] inputSize10, Integer[] inputSize11 ){

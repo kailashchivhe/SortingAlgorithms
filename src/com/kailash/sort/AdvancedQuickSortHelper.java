@@ -12,86 +12,58 @@ public class AdvancedQuickSortHelper {
         return advancedQuickSortHelper;
     }
 
-    private void quickSort(Integer[] data, int low, int high) {
-        if (low < high) {
-            int n = high - low + 1;
-            int med = findMedianOfMedian(data, low, high, n / 2);
-            int pos = partition(data, low, high, med);
-            quickSort(data, low, pos - 1);
-            quickSort(data, pos + 1, high);
+    //Modified Quick Sort
+    private void quickSort(Integer[] data, int low, int high )
+    {
+        if(low + 8 <= high)
+        {
+            int pivot = getMedian( low, high,data );
+            int middle = getMiddle( low, high, pivot, data );
+            quickSort( data, low, middle-1 );
+            quickSort( data, middle+1, high );
+        }
+        else
+        {
+            //If size <= 8 perform insertion sort
+            InsertionSortHelper.getInstance().performInsertionSort( data );
         }
     }
 
-    private int findMedianOfMedian(Integer[] data, int l, int r, int k) {
-        if (k > 0 && k <= r - l + 1) {
-            int n = r - l + 1;
-            int i;
-            Integer[] median = new Integer[(n + 14) / 15];
-            for (i = 0; i < (n / 15); i++) {
-                median[i] = median(data, l + i * 15, 15);
-            }
-            if (i * 15 < n) {
-                median[i] = median(data, l + i * 15, n % 15);
-                i++;
-            }
-            int medOfMed = i == 1 ? median[i - 1] : findMedianOfMedian(median, 0, i - 1, i / 2);
-            int pos = partition(data, l, r, medOfMed);
-            if (pos - l == k - 1) {
-                return data[pos];
-            } else if (pos - l > k - 1) {
-                return findMedianOfMedian(data, l, pos - 1, k);
-            } else {
-                return findMedianOfMedian(data, pos + 1, r, k - pos + l - 1);
-            }
-        }
-        return Integer.MAX_VALUE;
-    }
-
-    private int median(Integer[] data, int i, int n) {
-        int s = i;
-        int e = i + n;
-        while (i < e) {
-            int element = data[i];
-            int j = i - 1;
-            boolean largeElementFound = false;
-            while (j >= s && data[j] > element) {
-                if (!largeElementFound) {
-                    largeElementFound = true;
-                }
-                data[j + 1] = data[j];
-                j--;
-            }
-            if (largeElementFound) {
-                data[j + 1] = element;
-            }
-            i++;
-        }
-        return data[s + (n / 2)];
-    }
-
-    private int partition(Integer[] data, int left, int right, int pivot) {
-        int i;
-        for (i = left; i < right; i++) {
-            if (data[i] == pivot) {
+    private int getMiddle( int low, int high, int pivot,Integer[] data)
+    {
+        int i = low, j = high - 1;
+        while(true)
+        {
+            while( data[++i] < pivot );
+            while( pivot < data[--j] );
+            if( i >= j )
                 break;
-            }
+            else
+                swap(i, j,data );
         }
-        swap(data, i, right);
-        i = left;
-        for (int j = left; j < right; j++) {
-            if (data[j] <= pivot) {
-                swap(data, i, j);
-                i++;
-            }
-        }
-        swap(data, i, right);
+        swap(i, high-1,data);
         return i;
     }
 
-    private void swap(Integer[] array, int i, int j) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+    //To find pivot using median method
+    private int getMedian( int low, int high,Integer[] data )
+    {
+        int center = (low+high)/2;
+        if(data[center] < data[low])
+            swap( center, low,data);
+        if(data[high] < data[low])
+            swap( high, low,data);
+        if(data[high] < data[center])
+            swap(high, center,data );
+        swap( center, high-1,data);
+        return data[high-1];
+    }
+
+    private void swap(int i, int j,Integer[] data)
+    {
+        int temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
     }
 
     public void initiateAdvancedQuickSort( Integer[] inputSize1, Integer[] inputSize2, Integer[] inputSize3,
