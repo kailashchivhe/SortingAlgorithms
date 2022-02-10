@@ -41,13 +41,13 @@ Quick sort reverse sorted array: 1ms  3ms  12ms  19ms  79ms  314ms  1260ms  2034
 
 --------------------------------------------------------------------------------------------------------------------
 
-Modified Quick sort non-sorted array: 9ms  1ms  7ms  3ms  3ms  6ms  11ms  13ms  15ms  20ms  61ms  
+Modified Quick sort non-sorted array: 13ms  8ms  32ms  25ms  91ms  285ms  1184ms  1422ms  2416ms  4312ms  5519ms
 --------------------------------------------------------------------------------------------------------------------
 
-Modified Quick sort sorted array: 1ms  1ms  4ms  3ms  3ms  12ms  24ms  27ms  49ms  60ms  92ms  
+Modified Quick sort sorted array: 0ms  2ms  7ms  11ms  50ms  222ms  844ms  1395ms  1762ms  3204ms  5009ms
 --------------------------------------------------------------------------------------------------------------------
 
-Modified Quick sort reverse sorted array: 3ms  4ms  3ms  4ms  5ms  14ms  31ms  38ms  58ms  80ms  121ms  
+Modified Quick sort reverse sorted array: 1ms  3ms  7ms  12ms  63ms  215ms  855ms  1326ms  1642ms  3536ms  5550ms
 --------------------------------------------------------------------------------------------------------------------
 
 
